@@ -4,3 +4,4 @@ env/
 logs/
 migrations/*
 .gitignore
+!test/__init__.py

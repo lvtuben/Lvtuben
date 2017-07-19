@@ -1,5 +1,6 @@
 # -*-coding:utf-8
 class Config(object):
+    SECRET_KEY = 'ed28adc2701b8d988bfaf17ceaa612af'
     pass
 
 

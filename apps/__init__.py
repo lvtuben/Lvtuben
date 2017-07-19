@@ -1,4 +1,6 @@
 # -*-coding:utf-8
+import os
+
 from flask import Flask, redirect, url_for
 
 from api.v1.controller import api_v1_blueprint
@@ -13,7 +15,8 @@ def create_app(object_name):
     :param object_name:app默认加载的配置
     :return:flask app对象
     """
-    app = Flask(__name__)
+    app = Flask(__name__, template_folder=os.path.join(os.path.pardir, 'templates'),
+                static_folder=os.path.join(os.path.pardir, 'static'))
     app.config.from_object(object_name)
     db.init_app(app)
 
