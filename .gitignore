@@ -1,8 +1,6 @@
 *.pyc
-#env/*
-#logs/*
 .idea/*
-#env/
-#logs/
-#migrations/*
-
+env/
+logs/
+migrations/*
+.gitignore
