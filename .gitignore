@@ -1,0 +1,8 @@
+*.pyc
+env/*
+logs/*
+.idea/*
+env/
+logs/
+migrations/*
+
