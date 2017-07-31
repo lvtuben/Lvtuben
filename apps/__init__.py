@@ -1,7 +1,7 @@
 # -*-coding:utf-8
 import os
 
-from flask import Flask, redirect, url_for
+from flask import Flask, redirect, url_for,render_template
 
 from api.v1.controller import api_v1_blueprint
 from apps.base.model import db
@@ -22,7 +22,7 @@ def create_app(object_name):
 
     @app.route('/')
     def index():
-        return redirect(url_for('blog.index'))
+        return render_template('test.html')
 
     # 注册蓝图
     app.register_blueprint(upms_blueprint, url_prefix='/upms')
