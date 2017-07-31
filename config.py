@@ -9,6 +9,6 @@ class ProdCoonfig(Config):
 
 
 class DevConfig(Config):
-    DEBUG = True
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://meta:admin0809@60.205.205.176:3306/upms"
+    DEBUG = False
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:root@10.0.3.16:3306/upms"
     SQLALCHEMY_TRACK_MODIFICATIONS = True
